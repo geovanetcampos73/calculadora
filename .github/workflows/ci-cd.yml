@@ -1,5 +1,4 @@
 name: CI/CD Pipeline
-
 on:
   push:
     branches: [ main ]
@@ -31,6 +30,8 @@ jobs:
       run: node js/testes.js
 
   deploy:
+    environment:
+      name: github-pages
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
