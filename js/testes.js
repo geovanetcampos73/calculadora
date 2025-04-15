@@ -1,3 +1,4 @@
+const { somar, subtrair, dividir, multiplicar } = require('./calculadora.js');
 function assert(condicao, mensagem) {
     if (!condicao) {
         throw new Error(mensagem);
@@ -6,7 +7,6 @@ function assert(condicao, mensagem) {
 
 function rodarTestes() {
     console.log("Iniciando testes...");
-    
     // Testes para somar
     assert(somar(2, 3) === 5, "Erro: 2 + 3 deve ser 5");
     assert(somar(-1, 1) === 0, "Erro: -1 + 1 deve ser 0");
