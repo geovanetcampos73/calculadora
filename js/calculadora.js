@@ -1,5 +1,6 @@
 function somar(a, b) {
     return a + b;
+
 }
 
 function subtrair(a, b) {
@@ -42,4 +43,6 @@ function calcular(operacao) {
         document.getElementById("resultado").innerText = `Erro: ${error.message}`;
     }
 }
+
+
 module.exports = { somar, subtrair,dividir,multiplicar };
