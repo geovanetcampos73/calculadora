@@ -4,7 +4,7 @@
     
     // Verifica se tem 11 dígitos
     if (cpf.length !== 11) {
-        console.log("CPF INVÁLIDO");
+          console.log("CPF INVÁLIDO");
     }
     
     // Verifica se todos os dígitos são iguais
